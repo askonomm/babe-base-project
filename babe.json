@@ -1,0 +1,13 @@
+{
+  "site": {
+    "title": "Babe Site",
+  },
+  "data": [
+    {
+      "name": "posts",
+      "folder": "blog",
+      "sortBy": "date",
+      "order": "desc"
+    }
+  ]
+}

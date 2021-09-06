@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+</head>
+<body>
+
+{% if is_home %}
+
+    <h1 class="artsy-title">Posts</h1>
+
+    {% for post in data.posts %}
+        <h2><a href="/{{ post.path }}">{{ post.meta.title }}</a></h2>
+        <p>{{ post.meta.date|date:"d MMM, YYYY" }}</p>
+        {{ post.entry }}
+    {% endfor %}
+
+{% else %}
+
+    <h1><a href="/{{ content.path }}">{{ content.meta.title }}</a></h1>
+    <p>{{ content.meta.date|date:"d MMM, YYYY" }}</p>
+    {{ content.entry }}
+
+{% endif %}
+
+</body>
+</html>
