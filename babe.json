@@ -2,12 +2,11 @@
   "site": {
     "title": "Babe Site",
   },
-  "data": [
-    {
-      "name": "posts",
-      "folder": "blog",
+  "data": {
+    "posts": {
+      "content": "blog",
       "sortBy": "date",
       "order": "desc"
     }
-  ]
+  }
 }
